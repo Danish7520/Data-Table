@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <button id="hide" class="btn">Hide</button>
+    <button id="show" class="btn">Show</button>
+
+    <table class="table">
+      <thead class="thead-dark" style="background-color: #212529; color:#fffef1">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Date of Joining</th>
+          <th scope="col">Attendence</th>
+        </tr>
+      </thead>
+      <tbody style="color:black">
+        <tr>
+          <th scope="row">Muhammad Danish Nawaz</th>
+          <td>Internee</td>
+          <td>27-08-2018</td>
+          <td>P</td>
+        </tr>
+        <tr>
+          <th scope="row">Zunnurain Badar</th>
+          <td>BackEnd Developer</td>
+          <td>01-01-2018</td>
+          <td>P</td>
+        </tr>
+        <tr>
+          <th scope="row">Alamgir Munir</th>
+          <td>FronEnd Developer</td>
+          <td>01-01-2018</td>
+          <td class="alertShow">A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</body>
+<script>
+  $(".alertShow").click(function () {
+
+    alert("Name: Almagir Munir\nPhone: 03085162637\nDesignation: FrontEnd Developer ");
+  });
+  $("table").hide();
+  $(document).ready(function () {
+    $("#hide").click(function () {
+      $("table").hide();
+    });
+    $("#show").click(function () {
+      $("table").show();
+    });
+  });
+</script>
+
+</html>
